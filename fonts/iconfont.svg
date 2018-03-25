@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="x" unicode="x" horiz-adv-x="1001"
+d="M281 543q-27 -1 -53 -1h-83q-18 0 -36.5 -6t-32.5 -18.5t-23 -32t-9 -45.5v-76h912v41q0 16 -0.5 30t-0.5 18q0 13 -5 29t-17 29.5t-31.5 22.5t-49.5 9h-133v-97h-438v97zM955 310v-52q0 -23 0.5 -52t0.5 -58t-10.5 -47.5t-26 -30t-33 -16t-31.5 -4.5q-14 -1 -29.5 -0.5
+t-29.5 0.5h-32l-45 128h-439l-44 -128h-29h-34q-20 0 -45 1q-25 0 -41 9.5t-25.5 23t-13.5 29.5t-4 30v167h911zM163 247q-12 0 -21 -8.5t-9 -21.5t9 -21.5t21 -8.5q13 0 22 8.5t9 21.5t-9 21.5t-22 8.5zM316 123q-8 -26 -14 -48q-5 -19 -10.5 -37t-7.5 -25t-3 -15t1 -14.5
+t9.5 -10.5t21.5 -4h37h67h81h80h64h36q23 0 34 12t2 38q-5 13 -9.5 30.5t-9.5 34.5q-5 19 -11 39h-368zM336 498v228q0 11 2.5 23t10 21.5t20.5 15.5t34 6h188q31 0 51.5 -14.5t20.5 -52.5v-227h-327z" />
+    
+
+    
+    <glyph glyph-name="point" unicode="&#58888;" d="M512 384m-512 0a512 512 0 1 1 1024 0 512 512 0 1 1-1024 0Z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="bigpoint" unicode="&#58889;" d="M512 384m-256 0a256 256 0 1 1 512 0 256 256 0 1 1-512 0ZM512-102.4a486.4 486.4 0 1 0 0 972.8 486.4 486.4 0 0 0 0-972.8z m0 51.2a435.2 435.2 0 1 1 0 870.4 435.2 435.2 0 0 1 0-870.4z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="experience" unicode="&#58890;" d="M320-32h608V800H288v-672h64V736h512v-704H160V544h64V608H96v-640h224zM416 608h384v-128H416zM416 320h384v64H416zM416 192h384v64H416z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="profile" unicode="&#58891;" d="M896 0V736H128v-320H64V800h896v-864H64V288h64v-288zM195.008 640h256v-224h-256zM512 576h320V640H512zM512 416h320v64H512zM191.2 256h640v64h-640zM191.2 96h640v64h-640z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="portfolio" unicode="&#58892;" d="M320 704h384v-33.92h64V768H256v-97.92h64V704z m384 0v-33.92h64V768H256v-97.92h64V704h384zM768 576v-33.728h64V640H192v-99.488l64 0.192V576h512z m0-33.728h64V640H192v-99.488l64 0.192V576h512v-33.728zM192 448h640v-260.416l64-0.16V512H128v-322.784h64V448z m640 0v-260.416l64-0.16V512H128v-322.784h64V448h640zM128 128v-96h768v96H128z m-64 64h896v-224H64v224z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="vd" unicode="&#58893;" d="M160 736v-704h704V736H160zM96 800h832v-832H96V800zM64 832h128v-128H64zM832 832h128v-128h-128zM832 64h128v-128h-128zM64 64h128v-128H64zM416 278.496l96-93.28 96 93.28V576h-192v-297.504zM352 640h320v-388.576L512 96l-160 155.424V640zM352 576h320v-128H352z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
