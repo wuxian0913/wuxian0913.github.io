@@ -654,7 +654,7 @@ span{
 }
 .anniu{
     text-align: right;
-    margin-right:3rem;
+    padding-left: 22rem;
     position: relative;
     color: rgb(0,0,0,0.4);
 }
