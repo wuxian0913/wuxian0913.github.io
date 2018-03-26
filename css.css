@@ -1,4 +1,4 @@
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 787px) {
 
 
     .Text {
@@ -8,7 +8,7 @@
 
 }
 
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 787px) {
     .Text{
         font-size: 5rem;
     }
@@ -133,6 +133,15 @@
     margin: auto;
     text-align: center;
     }
+     .intro{
+
+    display:none;
+
+    }
+    .Part2{
+    min-height:230px;
+    padding-top: 4rem;
+    }
 
 }
 
@@ -148,6 +157,7 @@
         margin-left: 4rem;
         margin-top: 20px;
         padding-top: 30px;
+        padding-bottom: 80px;
     }
     .experience{
     max-width: 800px;
@@ -159,7 +169,7 @@
     width:800px;
     display:flex;
     margin:0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     }
     .Part3{
     max-height:680px;
@@ -259,12 +269,24 @@
     .ShowName{
     min-height: 600px;
     display: block;
-    max-width: 800px;
+    max-width: 860px;
     margin: auto;
+    }
+    .intro{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display:flex;
+
+    }
+    .Part2{
+    min-height:530px;
+    padding-top: 8rem;
     }
 }
 
-
+.cs{ width:50px; height:100px; background-color: #F0F0F0; border:1px solid #D9D9D9; z-index:1; right:5px; bottom:5px;POSITION:fixed;_position:absolute; _margin-top:expression(document.documentElement.clientHeight-this.style.pixelHeight+document.documentElement.scrollTop);}
+.cs a{ width:50px; height:49px; display:block; text-align:center; line-height:49px; font-size:12px; color:#999999; text-decoration:none;}
 
 
 
@@ -312,6 +334,7 @@ div{
     url('fonts/Futura-Bold.svg') format('svg');
 
 }
+
 @font-face {font-family: "iconfont";
     src: url('fonts/iconfont.eot?t=1510482584530'); /* IE9*/
     src: url('fonts/iconfont.eot?t=1510482584530#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -366,17 +389,22 @@ body{
 
 
 .TitleTab{
-
-    margin: 23px 25px 0 0;
-    float:right;
+    margin: 19px 36px 0 0;
+    float: right;
+    border: 1px solid #eee;
+    background: #222;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 2.4rem;
+    /* line-height: 2.6rem; */
+    padding: 0 1.3rem;
 
 }
 .TitleTab a {
-
-    margin: 0 30px 0 0;
-    font-size: 1.375rem;
-    color:#222222;
+    font-size: 1rem;
+    color:#fff;
     text-decoration: none;
+    font-weight: 300;
 
 }
 
@@ -386,11 +414,10 @@ body{
 
 
 .Part2{
-    min-height:530px;
     max-width:100%;
     background-color: #232323;
     background-color: #62e6ac!important;
-    padding-top: 8rem;
+
 }
 .Part2 #Title1{
     color: #fff;
@@ -458,12 +485,14 @@ span{
 	word-wrap: break-word;
 	text-align:justify;
 
+
 }
 .smalltitle{
 	margin-top: 3.5rem;
     font-size: 1.9rem;
 	color:#232323;
     letter-spacing: 0.2rem;
+    font-weight: 500;
 }
 .com{
 	margin-top:1.2rem;
@@ -602,14 +631,7 @@ span{
     letter-spacing: .08125rem;
     margin-top: 0.5rem;
 }
-.intro{
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    display:flex;
 
-
-}
 .icon-box{
     width: 90px;
     height: 90px;
@@ -632,7 +654,7 @@ span{
 }
 .anniu{
     text-align: right;
-    margin-right:20px;
+    margin-right:3rem;
     position: relative;
     color: rgb(0,0,0,0.4);
 }
@@ -650,9 +672,11 @@ span{
     max-width: 800px;
     width: 100%;
     margin:0 auto;
+    display: block;
 }
 .projectpic{
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 .projecttitle_{
     width:50px;
@@ -667,4 +691,251 @@ span{
 }
 .container img {
     position: absolute;  bottom: 0;
+}
+li img{
+    display: none;
+}
+li:hover img{
+    display: block;
+    position: relative;
+}
+.wechat{
+    position: absolute;
+}
+
+p#back-to-top{
+        position:fixed;
+        bottom:40px;
+        right:40px;
+    }
+    p#back-to-top a{
+        text-align:center;
+        text-decoration:none;
+        color:#373737;
+        display:block;
+        width:30px;
+        /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+        -moz-transition:color1s;
+        -webkit-transition:color1s;
+        -o-transition:color1s;
+    }
+    p#back-to-top a:hover{
+        color:#373737;
+    }
+    p#back-to-top a span{
+        background-color:#222;
+        z-index: -100;
+        border-radius:0px;
+        display:block;
+        height:40px;
+        width:40px;
+        margin-bottom:5px;
+        /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+        -moz-transition:background1s;
+        -webkit-transition:background1s;
+        -o-transition:background1s;
+    }
+    #back-to-top a:hover span{
+        background-color:#373737;
+    }
+    p#back-to-top a span img{
+        padding-top:0.7rem;
+    }
+/*contact 弹窗 */
+
+.md-perspective,
+.md-perspective body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.md-perspective body  {
+    background: #fff;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 550px;
+    min-width: 320px;
+    height: auto;
+    z-index: 9999999;
+    visibility: hidden;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+    visibility: visible;
+}
+
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9999995;
+    opacity: 0;
+    background: rgba(1,1,1,0.6);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+    color: #5b5b5b;
+    background: #fff;
+    position: relative;
+    border-radius: 0px;
+    text-align: center;
+
+
+}
+.md-content .md-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 999999;
+}
+.md-content .md-close-btn a{
+    color: #222;
+    cursor: pointer;
+
+}
+.md-content .md-close-btn a:hover{
+    color: #222;
+    text-decoration: none;
+}
+.md-content .md-close {
+    font-size: 13px;
+}
+
+.md-content h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 26px;
+    padding-bottom: 0px !important;
+    text-align: center;
+    background: #fff;
+    border-radius: 0;
+    color: #222;
+    text-decoration:none;
+    font-family: "TFont" !important;
+
+}
+
+.md-content > div {
+    padding: 0px 40px 30px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+.md-content > div p {
+    margin: 0;
+    padding: 0px 0 15px 0;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+}
+
+.md-content > div ul {
+    margin: 0;
+    padding: 0 0 20px 20px;
+}
+
+.md-content > div ul li {
+    padding: 5px 0;
+}
+#contact3{
+    text-decoration: none;
+    font-size: 1.04rem;
+    color:#fff;
+
+}
+#contact3 a:hover{
+    color:#62e6ac;
+}
+#contactbtn{
+    font-size: 0.8rem;
+    border-radius: 0;
+    background: #222;
+    padding:6px 10px;
+    color:#fff;
+    margin-top: 20px;
+}
+#wechat1{
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#wechat1 img{
+    width:100%;
+}
+
+/* Individual modal styles with animations/transitions */
+
+
+/* Effect 10: 3D sign */
+.md-effect-10.md-modal {
+    -webkit-perspective: 1300px;
+    -moz-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.md-effect-10 .md-content {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-60deg);
+    -moz-transform: rotateX(-60deg);
+    -ms-transform: rotateX(-60deg);
+    transform: rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show.md-effect-10 .md-content {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+.box{
+    margin-top: 0.1rem;
+}
+.part7{
+    height: 13rem;
+}
+#btp{
+    width: 100px;
+    height: 100px;
+    margin-top: 3rem;
+    opacity: 0.6;
 }

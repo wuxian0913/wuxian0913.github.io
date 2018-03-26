@@ -2,66 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
     <link rel="stylesheet" href="css.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="icon" href="images/fav.ico" type="image/x-icon"/>
+    <title>Wuxian Resume</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
      <script>
-        function $(element){
-            return element = document.getElementById(element);
-        }
-        function $D(){
-            var d=$('class1content');
-            var h=d.offsetHeight;
-            var maxh=300;
-            function dmove(){
-                h+=50; //层展开速度
-                if(h>=maxh){
-                    d.style.height='300px';
-                    clearInterval(iIntervalId);
+
+
+
+$(document).ready(function(){
+        //首先将#back-to-top隐藏
+        $("#back-to-top").hide();
+        //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>600){
+                    $("#back-to-top").fadeIn(500);
                 }else{
-                    d.style.display='block';
-                    d.style.height=h+'px';
+                    $("#back-to-top").fadeOut(500);
                 }
-            }
-            iIntervalId=setInterval(dmove,2);
-        }
-        function $D2(){
-            var d=$('class1content');
-            var h=d.offsetHeight;
-            var maxh=300;
-            function dmove(){
-                h-=50;//层收缩速度
-                if(h<=0){
-                    d.style.display='none';
-                    clearInterval(iIntervalId);
-                }else{
-                    d.style.height=h+'px';
-                }
-            }
-            iIntervalId=setInterval(dmove,2);
-        }
-        function $use(){
-            var d=$('class1content');
-            var sb=$('stateBut');
-            if(d.style.display=='none'){
-                $D();
-                sb.innerHTML="折叠";
-            }else{
-                $D2();
-                sb.innerHTML='展开';
-            }
-        }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#back-to-top").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    });
+
+
     </script>
 
 
 	  
 </head>
+<link rel="stylesheet" id="pageloader-css"  href="css/pageloader.css" type="text/css" media="all" />
 <body>
+<!--加载 -->
+<div id="bonfire-pageloader">
+
+    <div class="bonfire-pageloader-icon">
+
+        <div id="preloader_3"></div>
+        <div id="loadingtext">加载中...</div>
+
+
+    </div>
+
+
+</div>
+<!--加载 -->
+
+<!-- body-->
+
+<div>
+
+
+
+
+  <div class="md-modal md-effect-10" id="modal-10">
+    <div class="md-content">
+      <h3>Contact Me</h3>
+      <div>
+        <p>欢迎您与我联系</p>
+        <ul>
+          <li><strong>Tel:</strong>  131-2198-4629</li>
+          <li><strong>Email:</strong>  wuxian0817@126.com</li>
+        </ul>
+        <div id="wechat1"><img src="images/wechat2.png"/></div>
+        <button class="md-close btn-sm btn-primary" id="contactbtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="md-overlay"></div>
+
+
+
+
+<p id="back-to-top"><a href="#top"><span><img src="images/gotop.png"></span></a></p>
 <div class="Head">
     <div id="Logo"></div>
     <div class="TitleTab">
-        <a href="#pro">Contact</a>
+       <a href="javascript:;" class="md-trigger btn btn-primary btn-sm" data-modal="modal-10" id="contact3">Contact</a>
 
     </div>
 
@@ -101,7 +126,7 @@
 		<div class="Avatar"><img src="images/zhaopian.png" width="240rem" height="240rem" /></div>
 		<div class="com">
 			<div class="smalltitle" >吴限</div>
-			<div class="protext">现居北京，UI设计师，近3年从业经验。1992年生人，处女座。初中和高中学过一段时间美术。2014年本科毕业于内蒙古大学，理学学士。热爱探索新事物，善于与团队沟通与协作，乐于承担压力和挑战。</div>
+			<div class="protext" id="contactq">现居北京，UI设计师，近3年从业经验。1992年生人，处女座。初中和高中学过一段时间美术。2014年本科毕业于内蒙古大学，理学学士。热爱探索新事物，善于与团队沟通与协作，乐于承担压力和挑战。</div>
 		</div>
 	</div>
 
@@ -226,25 +251,138 @@
 			熊猫金库
 			<div class="projecttitle_"></div>
 		</div>
-   <span class="anniu" id="stateBut" onclick="$use()">折叠</span>
 </div>
-<div class="intro-icon"><i class="iconfont">&#xe60b;</i></div>
-<div class="class1">
+<div class="box" initState="extend">
+    <span class="anniu">收缩</span>
+    <div>
+			<img class="projectpic" src="images/xmjk/7.png">
+			<img class="projectpic" src="images/xmjk/8.png">
+			<img class="projectpic" src="images/xmjk/9.png">
+			<img class="projectpic" src="images/xmjk/10.png">
+			<img class="projectpic" src="images/xmjk/11.png">
+			<img class="projectpic" src="images/xmjk/12.png">
+			<img class="projectpic" src="images/xmjk/13.png">
+			<img class="projectpic" src="images/xmjk/14.png">
+			<img class="projectpic" src="images/xmjk/15.png">
+            <img class="projectpic" src="images/xmjk/16.png">
+            <img class="projectpic" src="images/xmjk/17.png">
+            <img class="projectpic" src="images/xmjk/18.png">
+            <img class="projectpic" src="images/xmjk/19.png">
+            <img class="projectpic" src="images/xmjk/20.png">
+            <img class="projectpic" src="images/xmjk/21.png">
+            <img class="projectpic" src="images/xmjk/22.png">
+            <img class="projectpic" src="images/xmjk/23.png">
+            </div>
+</div>
 
-    <div id="class1content">
-		<div class="projectpicsum">
-			<img class="projectpic" src="images/xm_1.png">
-			<img class="projectpic" src="images/xm_2.png">
-			<img class="projectpic" src="images/xm_3.png">
-			<img class="projectpic" src="images/xm_4.png">
-			<img class="projectpic" src="images/xm_5.png">
-			<img class="projectpic" src="images/xm_6.png">
-			<img class="projectpic" src="images/xm_7.png">
-			<img class="projectpic" src="images/xm_8.png">
-			<img class="projectpic" src="images/xm_9.png">
-		</div>
-		</div>
-	</div>
+    <div class="project">
+        <div class="projecttitle">
+            <span class="projectnum">02</span>
+            智子
+            <div class="projecttitle_"></div>
+        </div>
+</div>
+        <div class="box" initState="shrink">
+    <span class="anniu">展开</span>
+        <div>
+            <img class="projectpic" src="images/zhizi/24.png">
+            <img class="projectpic" src="images/zhizi/25.png">
+            <img class="projectpic" src="images/zhizi/26.png">
+            <img class="projectpic" src="images/zhizi/27.png">
+
+                </div>
+    </div>
+
+ <div class="project">
+        <div class="projecttitle">
+            <span class="projectnum">03</span>
+            熊猫记账
+            <div class="projecttitle_"></div>
+        </div>
+</div>
+        <div class="box" initState="shrink">
+    <span class="anniu">展开</span>
+        <div>
+            <img class="projectpic" src="images/xmjz/28.png">
+            <img class="projectpic" src="images/xmjz/29.png">
+            <img class="projectpic" src="images/xmjz/30.png">
+            <img class="projectpic" src="images/xmjz/31.png">
+
+                </div>
+    </div>
+
+
+    <div class="project">
+        <div class="projecttitle">
+            <span class="projectnum">04</span>
+            H5页面
+            <div class="projecttitle_"></div>
+        </div>
+</div>
+        <div class="box" initState="shrink">
+    <span class="anniu">展开</span>
+        <div>
+            <img class="projectpic" src="images/h5/33.png">
+
+                </div>
+    </div>
+
+<div class="project">
+        <div class="projecttitle">
+            <span class="projectnum">05</span>
+           平面设计
+            <div class="projecttitle_"></div>
+        </div>
+</div>
+        <div class="box" initState="shrink">
+    <span class="anniu">展开</span>
+        <div>
+            <img class="projectpic" src="images/pingmian/37.png">
+            <img class="projectpic" src="images/pingmian/38.png">
+
+                </div>
+    </div>
+    <div class="project">
+        <div class="projecttitle">
+            <span class="projectnum">06</span>
+           小练习
+            <div class="projecttitle_"></div>
+        </div>
+</div>
+        <div class="box" initState="shrink">
+    <span class="anniu">展开</span>
+        <div>
+            <img class="projectpic" src="images/lianxi/39.png">
+            <img class="projectpic" src="images/lianxi/40.png">
+
+                </div>
+    </div>
+
+</div>
+
+<div class="line"></div>
+<div class="part7">
+<img  id="btp" src="images/bottomlogo.png"/>
+</div>
 </div>
 </body>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+    <script src="js/pageloader.js" type="text/javascript"></script>
+    <!-- BEGIN PLACE LOADING ICON IN THE MIDDLE OF THE PAGE -->
+    <script>
+    jQuery(window).resize(function(){
+         resizenow();
+    });
+    function resizenow() {
+        var browserwidth = jQuery(window).width();
+        var browserheight = jQuery(window).height();
+        jQuery('.bonfire-pageloader-icon').css('right', ((browserwidth - jQuery(".bonfire-pageloader-icon").width())/2)).css('top', ((browserheight - jQuery(".bonfire-pageloader-icon").height())/2));
+    };
+    resizenow();
+    </script>
 </html>
