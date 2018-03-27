@@ -5,12 +5,12 @@
  */
 
 $(document).ready(function () {
-    const boxes = $(".box"); // 盒子们
-    $.each(boxes, (index, box) => {
+    var boxes = $(".box"); // 盒子们
+    $.each(boxes, function(index, box) {
         box = $(box);
-        const initState = box.attr('initState');
-        const btn = box.children('span');
-        const content = box.children('div');
+        var initState = box.attr('initState');
+        var btn = box.children('span');
+        var content = box.children('div');
         if(initState) extend(initState === 'extend', content, btn, false);
         btn.on('click', function() {
             if (content.css('display') === 'none') { // 不可见的时候
@@ -27,14 +27,15 @@ $(document).ready(function () {
      * @param btn 按钮
      * @param animate 是否执行动画
      */
-    function extend(isExtend, content, btn, animate = true) {
+    function extend(isExtend, content, btn, animate) {
+    	if (animate === undefined) animate = true;
         if (isExtend) {
-            content.animate({display: 'block'}, 0, () => {
+            content.animate({display: 'block'}, 0, function() {
                 content.show(animate ? 400 : 0);
             });
             btn.text('收缩');
         } else {
-            content.hide(animate ? 400 : 0, () => {
+            content.hide(animate ? 400 : 0, function() {
                 content.css({display: 'none'})
             });
             btn.text('展开');
