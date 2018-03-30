@@ -31,7 +31,7 @@
         display: -webkit-flex;
         -webkit-flex-direction: column;
         flex-direction: column;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
 
     }
     .experience{
@@ -46,6 +46,7 @@
     .smallbox{
     margin:0 auto;
     display: block;
+    padding-bottom: 5rem;
 
 
     }
@@ -54,12 +55,13 @@
     line-height: 1.8;
     letter-spacing: .03125rem;
     max-width: 22.125rem;
-    color:rgba(0,0,0,0.65);
+    color:rgb(255,255,255,0.7);
     word-wrap: break-word;
     margin-top:1.6rem;
-    font-size:0.9rem;
+
     margin-right: 2rem;
     margin-left: 2rem;
+     font-weight: 100;
 }
     .Part3{
     max-height:800px;
@@ -99,15 +101,7 @@
     margin:auto;
     display: block;
     }
-    .itemsum{
-    max-width:46.25rem;
-    margin:auto;
-    align-items: center;
-    display: block;
-    margin-top: 200px;
-    padding-left:50px;
-    -webkit-justify-content: center;
-    }
+
     #det{
     line-height: 1.8;
     letter-spacing: .10125rem;
@@ -140,7 +134,8 @@
     }
     .Part2{
     min-height:230px;
-    padding-top: 4rem;
+    padding-top: 1rem;
+
     }
 
 }
@@ -226,10 +221,11 @@
     line-height: 1.8;
     letter-spacing: .03125rem;
     max-width: 22.125rem;
-    color:rgba(0,0,0,0.65);
+    color:rgb(255,255,255,0.7);
     word-wrap: break-word;
     margin-top:1.6rem;
     font-size:0.9rem;
+    font-weight: 100;
     }
     #det{
     line-height: 1.8;
@@ -267,7 +263,7 @@
 
     }
     .ShowName{
-    min-height: 600px;
+    min-height: 630px;
     display: block;
     max-width: 860px;
     margin: auto;
@@ -280,9 +276,14 @@
 
     }
     .Part2{
-    min-height:530px;
-    padding-top: 8rem;
+    min-height:430px;
+padding-top: 4rem;
+    padding-bottom: 7rem;
     }
+
+
+}
+
 }
 
 .cs{ width:50px; height:100px; background-color: #F0F0F0; border:1px solid #D9D9D9; z-index:1; right:5px; bottom:5px;POSITION:fixed;_position:absolute; _margin-top:expression(document.documentElement.clientHeight-this.style.pixelHeight+document.documentElement.scrollTop);}
@@ -415,17 +416,21 @@ body{
 
 .Part2{
     max-width:100%;
-    background-color: #232323;
-    background-color: #62e6ac!important;
+
+     background: -webkit-linear-gradient(left top,#1f1f1f , #444444); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom right, #1f1f1f , #444444); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom right,#1f1f1f , #444444); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom right, #1f1f1f , #444444); /* 标准的语法 */
 
 }
+
 .Part2 #Title1{
     color: #fff;
     border: .1475rem solid #fff;
 
 }
 .Text{
-    margin-top: 2.5rem;
+    margin-top: 10rem;
     font-weight: bold;
 
     margin-bottom: 1.1rem;
@@ -490,7 +495,7 @@ span{
 .smalltitle{
 	margin-top: 3.5rem;
     font-size: 1.9rem;
-	color:#232323;
+	color:#fff;
     letter-spacing: 0.2rem;
     font-weight: 500;
 }
@@ -499,10 +504,10 @@ span{
 }
 .line{
 	width:90%;
-	height:30px;
+
     border-bottom: 1px solid rgba(0,0,0,.05);
 	margin:0 auto;
-	margin-top:20px;
+
     display: block;
     margin-bottom: 20px;
 }
@@ -513,9 +518,9 @@ span{
     display: block;
 }
 .ans{
-	font-weight: 700;
-    font-size: 1.3rem;
-    color: #232323;
+
+    font-size: 1.2rem;
+    color: #fff;
 	margin-top:0.2rem;
 	text-align:center;
     font-family: "TFont";
@@ -525,10 +530,11 @@ span{
 	margin-top: 3.2rem;
     line-height: 1.8;
     letter-spacing: .03125rem;
-	color:rgba(0,0,0,0.65);
+	color:#fff;
 	word-wrap: break-word;
 	font-size:0.9rem;
 	text-align:center;
+    font-weight: 100;
 }
 
 #line2{
@@ -570,7 +576,7 @@ span{
     display: block;
 }
 .item img{
-    width:1.5rem;
+    width:4.5rem;
     padding-top:0.9rem;
     float: left;
 }
@@ -589,8 +595,11 @@ span{
     -webkit-justify-content: center;
     max-width:800px;
 
-
-
+}
+.e1{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+}
 
 }
 .item p{
@@ -604,14 +613,15 @@ span{
     align-items: center;
     background: #62e6ac;
     display: flex;
-    height: 4.2rem;
+    height:0.45rem;
     -webkit-box-pack: center;
     justify-content: center;
-    width: 4.2rem!important;
+    width: 3.8rem !important;
     text-align:center;
     margin:0 auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 .intro-icon{
     border: .1875rem solid #fff;
@@ -627,7 +637,7 @@ span{
 .intro-text{
     font-size: 0.8rem;
     color:#fff;
- 
+
     letter-spacing: .05125rem;
     margin-top: 0.5rem;
 }
@@ -641,7 +651,7 @@ span{
 
 }
 .Part6{
-    margin-top: 44rem;
+    margin-top: 4rem;
 }
 .extitle{
     font-family: "TFont";
@@ -649,7 +659,7 @@ span{
 .projecttitle{
     font-size: 2rem;
     margin-bottom: -2rem;
-
+    padding-top: 1rem;
     text-align: left;
 }
 .anniu{
@@ -678,10 +688,7 @@ span{
     width: 100%;
     margin-bottom: 0.5rem;
 }
-.projecttitle_{
-    width:50px;
-    border-bottom:.2375rem solid #62e6ac;
-}
+
 .container {
     height: 0; position: relative;  overflow: hidden;
     -webkit-transition: height 0.6s;
@@ -938,4 +945,15 @@ p#back-to-top{
     height: 100px;
     margin-top: 3rem;
     opacity: 0.6;
+}
+
+.skill2{
+    height:26rem !important;
+}
+ #tu3{
+    width:65%;
+    margin-top: 4rem;
+}
+#line2{
+    margin-top: 6rem;
 }
