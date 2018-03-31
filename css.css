@@ -93,13 +93,14 @@
     margin:auto 0;
     }
     .skillarea{
-    width:19rem;
-    height: 14rem;
-    border-bottom:.1875rem solid #62e6ac;
+    width:17rem;
+    height: 17rem;
     box-shadow:0 1rem 3rem 0 rgba(0,0,0,.06);
     transform: translate3d(0,5rem,0);
     margin:auto;
     display: block;
+    border-radius: 50%;      -moz-border-radius: 50%;      -webkit-border-radius: 50%;
+
     }
 
     #det{
@@ -137,6 +138,13 @@
     padding-top: 1rem;
 
     }
+    .skilltitle{
+    font-size: 1.425rem;
+    font-family: "TFont";
+    margin:22px 0 -5px 0;
+    padding-top: 4rem;
+
+}
 
 }
 
@@ -199,13 +207,14 @@
     }
     .skillarea{
     width:15rem;
-    height: 16rem;
-    border-bottom:.1875rem solid #62e6ac;
+    height: 15.8rem;
     box-shadow:0 1rem 3rem 0 rgba(0,0,0,.06);
     float:left;
     transform: translate3d(0,5rem,0);
     margin-left:15px;
     display: block;
+    border-radius: 50%;      -moz-border-radius: 50%;      -webkit-border-radius: 50%;
+       margin-top: -2rem;
     }
     .itemsum{
     max-width:46.25rem;
@@ -280,7 +289,13 @@
 padding-top: 4rem;
     padding-bottom: 7rem;
     }
+.skilltitle{
+    font-size: 1.425rem;
+    font-family: "TFont";
+    margin:22px 0 -5px 0;
+    padding-top: 2rem;
 
+}
 
 }
 
@@ -399,7 +414,7 @@ body{
     height: 2.4rem;
     /* line-height: 2.6rem; */
     padding: 0 1.3rem;
-
+    border-radius: 50px;      -moz-border-radius: 50px;      -webkit-border-radius: 50px;
 }
 .TitleTab a {
     font-size: 1rem;
@@ -535,6 +550,7 @@ span{
 	font-size:0.9rem;
 	text-align:center;
     font-weight: 100;
+
 }
 
 #line2{
@@ -557,12 +573,7 @@ span{
     max-width:800px;
 
 }
-.skilltitle{
-    font-size: 1.425rem;
-    font-family: "TFont";
-    margin:22px 0 -5px 0;
-    padding-top: 30px;
-}
+
 .pr p{
     font-size: 1.025rem;
     color: rgba(0,0,0,0.65);
@@ -574,6 +585,7 @@ span{
     margin:0 auto;
     max-width:800px;
     display: block;
+        margin-top: -1rem;
 }
 .item img{
     width:4.5rem;
@@ -890,6 +902,7 @@ p#back-to-top{
     padding:6px 10px;
     color:#fff;
     margin-top: 20px;
+    border-radius: 50px;      -moz-border-radius: 50px;      -webkit-border-radius: 50px;
 }
 #wechat1{
     text-align: center;
@@ -956,4 +969,8 @@ p#back-to-top{
 }
 #line2{
     margin-top: 6rem;
+}
+.yuan{
+        display: inline-block;
+        color: #62e6ac;
 }
